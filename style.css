@@ -3,13 +3,6 @@
 :root {
   /* Color */
   --color-white: #ffffff;
-  --color-light-white: #eeeeee;
-  --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
-  --color-dark-grey: #4d4d4d;
-  --color-grey: #616161;
-  --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -22,7 +15,6 @@
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
-  --font-micro: 14px;
 
   /* Font weight */
   --weight-bold: 800;
@@ -103,7 +95,7 @@ p {
   width: 100%;
   padding: 16px;
   background-color: var(--color-background);
-  color: white;
+  color: var(--color-white);
   z-index: 1;
 }
 .navbar__logo {
@@ -132,7 +124,7 @@ p {
 }
 
 .navbar__menu__item.active {
-  border: 1px white solid;
+  border: 1px var(--color-white) solid;
   border-radius: var(--border-radius);
   background-color: var(--color-dark-background);
 }
@@ -142,7 +134,7 @@ p {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 180px;
+  padding-top: 120px;
   padding-bottom: 60px;
   background: #b4bebf;
 }
@@ -165,11 +157,11 @@ p {
 .home h1,
 .home h2,
 .home__btn {
-  color: white;
+  color: var(--color-white);
 }
 
 .home__btn {
-  border: 2px white solid;
+  border: 2px var(--color-white) solid;
   padding: 12px 10px;
   margin-top: 20px;
   font-size: 18px;
@@ -178,7 +170,7 @@ p {
 
 .home__btn:hover {
   transform: scale(0.98);
-  background-color: var(--color-dark-background);
+  background-color: var(--color-orange);
 }
 /* Section common */
 
@@ -232,7 +224,6 @@ p {
   padding: 40px;
   margin: auto;
   text-align: center;
-
   background-color: var(--color-yellow);
 }
 .value p {
@@ -244,7 +235,7 @@ p {
 }
 .value__list {
   padding: 10px;
-  font-weight: bold;
+  font-weight: var(--weight-bold);
 }
 
 /* adventure */
@@ -285,19 +276,22 @@ p {
 }
 .post__description {
   opacity: 0;
-  font-weight: bold;
+  font-weight: var(--weight-bold);
   transition: all var(--animation-duration) ease-in;
 }
 
 .adventure__post:hover .post__description {
   transform: translateY(-130px);
-  color: black;
+  color: var(--color-black);
   opacity: 1;
 }
 
 /* vision */
 .vision {
   background-color: #cfe8dc;
+  width: 100%;
+  padding: 40px 0px;
+  text-align: center;
 }
 .vision h2 {
   margin-bottom: 20px;
@@ -310,4 +304,24 @@ p {
 
 .vision li {
   margin: 10px;
+}
+
+/* contact */
+.contact {
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-background);
+}
+.contact__title,
+.contact__email {
+  color: var(--color-white);
+}
+.contact__icons {
+  margin-top: 20px;
+  font-size: 60px;
+}
+.contact__icons i:hover {
+  transform: scale(1.2);
+  color: var(--color-orange);
 }
