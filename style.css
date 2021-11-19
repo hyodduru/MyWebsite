@@ -226,13 +226,65 @@ p {
   transform: rotate(30deg) scale(1.1);
 }
 
+/* value */
 .value {
   background-color: var(--color-yellow);
 }
-
+.value p {
+  margin-top: 20px;
+  font-style: italic;
+}
 .value__lists {
   padding-top: 20px;
 }
 .value__list {
   padding: 10px;
+  font-weight: bold;
+}
+
+/* adventure */
+
+.category__btn {
+  width: 80px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  border: solid var(--color-background) 2px;
+  border-radius: var(--border-radius);
+  font-size: 20px;
+}
+
+.category__btn:hover {
+  background-color: var(--color-dark-background);
+  color: white;
+}
+
+.adventure__posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.adventure__post {
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.adventure__post img {
+  width: 230px;
+  height: 230px;
+  border-radius: var(--border-radius);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.adventure__post:hover img {
+  opacity: 0.3;
+}
+.post__description {
+  opacity: 0;
+  font-weight: bold;
+}
+
+.adventure__post:hover .post__description {
+  transform: translateY(-130px);
+  color: black;
+  opacity: 1;
 }
