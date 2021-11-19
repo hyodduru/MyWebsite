@@ -14,21 +14,21 @@
     <title>Hyodduru World</title>
 </head>
 <body>
-    <nav class = "navbar">
+    <nav id = "navbar">
         <div class="navbar__logo">
             <img src="img/favicon.png.png" alt="favicon">
             <span class="logo__title">Hyoddru World</span>
         </div>
         <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Value</li>
-            <li class="navbar__menu__item">Adventure</li>
-            <li class="navbar__menu__item">Vision</li>
-            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item" data-id = 'home'>Home</li>
+            <li class="navbar__menu__item" data-id ='about' >About</li>
+            <li class="navbar__menu__item" data-id ='value' >Value</li>
+            <li class="navbar__menu__item" data-id ='adventure' >Adventure</li>
+            <li class="navbar__menu__item" data-id ='vision' >Vision</li>
+            <li class="navbar__menu__item" data-id ='contact' >Contact</li>
         </ul>
     </nav>
-    <section class="home">
+    <section id="home">
         <img src="img/profile.JPG" alt="profile" class="home__profile">
         <h1>
             <img src="img/star.png" class="home__sticker" alt="">
@@ -38,9 +38,9 @@
         <h2>
             일상의 자유와 낭만을 사랑하는 호기심 많은 내향인의 이야기
         </h2>
-        <button class="home__btn">CONTACT ME</button>
+        <button class="home__btn" data-id='contact'>CONTACT ME</button>
     </section>
-    <section class="about section">
+    <section id="about" class ="section">
         <div class="section__container">
             <h1>About Me </h1>
             <p>혼자있는 것을 좋아하지만 나의 모든 것을 다 이해해줄 수 있는 사람이 내 곁에 있어주길 갈망하고,<br><br>
@@ -72,7 +72,7 @@
             </div>
         </div>  
     </section>
-    <section class="value">
+    <section id="value">
         <div class="section__container">
             <h1>Value</h1>
             <h2>인생에서 가장 중요하다고 생각하는 것들</h2>
@@ -97,7 +97,7 @@
             </ul>
         </div>      
     </section>
-    <section class="adventure section">
+    <section id="adventure" class="section">
         <div class="section__container">
             <h1>Adventure</h1>
         <h2>새로운 세계에 한 발짝 내딛기</h2>
@@ -182,7 +182,7 @@
         </div>
         </div>
     </section>
-    <section class="vision">
+    <section id="vision">
         <div class="section__container">
             <h1>My Vision</h1><br>
             <h3>Next Adventure?</h3>
@@ -202,7 +202,7 @@
             <li>위의 경험과 지식들을 기반으로 한 자기소개서 작성후 회사 지원!</li>
         </ul>
    </section>
-   <section class = "contact">
+   <section id= "contact">
     <h1 class="contact__title">Let's talk</h1>
     <h2 class="contact__email">hoje15v@gmail.com</h2>
     <div class="contact__icons">
