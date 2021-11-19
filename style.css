@@ -183,7 +183,7 @@ p {
 /* Section common */
 
 .section {
-  padding: 50px;
+  padding: 40px;
   text-align: center;
   max-width: 1200px;
   margin: auto;
@@ -224,4 +224,15 @@ p {
 
 .detail__icon:hover img {
   transform: rotate(30deg) scale(1.1);
+}
+
+.value {
+  background-color: var(--color-yellow);
+}
+
+.value__lists {
+  padding-top: 20px;
+}
+.value__list {
+  padding: 10px;
 }
