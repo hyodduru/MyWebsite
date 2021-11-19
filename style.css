@@ -7,7 +7,8 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-background: #b4bebf;
+  --clolor-light-green: #cfe8dc;
+  --color-background: #cedadb;
   --color-dark-background: #788d8f;
   --color-bright-background: #d8f2ed;
   /* Font size */
@@ -294,7 +295,7 @@ p {
 
 /* vision */
 #vision {
-  background-color: #cfe8dc;
+  background-color: var(--clolor-light-green);
   width: 100%;
   padding: 60px 0px;
   text-align: center;
@@ -332,6 +333,18 @@ p {
   color: var(--color-orange);
 }
 
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  font-size: 50px;
+  background-color: var(--clolor-light-green);
+  color: var(--color-white);
+}
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {

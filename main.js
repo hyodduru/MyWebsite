@@ -35,3 +35,5 @@ window.addEventListener('scroll',()=>{
        console.log(home.style.opacity = 1 - window.scrollY/homeHeight);
     }
 })
+
+//handle arrow-up btn
