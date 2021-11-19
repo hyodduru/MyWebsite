@@ -380,9 +380,15 @@ p {
   .adventure__posts {
     margin-top: 20px;
   }
-  .adventure__post {
-    flex-grow: 1;
-    margin: 2px 0;
+  .adventure__post img {
+    width: 400px;
+    height: 380px;
+  }
+  .adventure__post:hover .post__description {
+    transform: translateY(-210px);
+  }
+  .post__description {
+    font-size: 25px;
   }
 
   .arrow-up {
