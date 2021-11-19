@@ -8,7 +8,7 @@
   --color-orange: #feb546;
   --color-black: #000000;
   --clolor-light-green: #cfe8dc;
-  --color-background: #cedadb;
+  --color-background: #b4bebf;
   --color-dark-background: #788d8f;
   --color-bright-background: #d8f2ed;
   /* Font size */
@@ -142,7 +142,7 @@ p {
   text-align: center;
   padding-top: 120px;
   padding-bottom: 60px;
-  background: #b4bebf;
+  background: var(--color-background);
 }
 .home__profile {
   width: 200px;
@@ -342,9 +342,21 @@ p {
   border: 1px solid transparent;
   border-radius: 50%;
   font-size: 50px;
-  background-color: var(--clolor-light-green);
+  background-color: var(--color-background);
   color: var(--color-white);
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--animation-duration) ease-in;
 }
+.arrow-up.visible {
+  opacity: 1;
+  display: block;
+  pointer-events: auto;
+}
+.arrow-up:hover {
+  transform: scale(1.08);
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {
