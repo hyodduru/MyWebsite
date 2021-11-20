@@ -58,3 +58,23 @@ function scrollIntoView(selector){
     scrollTo.scrollIntoView({behavior: 'smooth'});
 }
 
+//adventure filtering 
+const categoryBtns= document.querySelector('.adventure__category');
+const adventurePosts = document.querySelectorAll('.adventure__post');
+
+
+
+categoryBtns.addEventListener('click',(event)=>{
+    const button = event.target;
+    const filterName = button.dataset.filter;
+    if(filterName===undefined){
+        return;
+    }
+    adventurePosts.forEach(post =>  
+      { 
+        if(filterName === '*' || filterName === post.dataset.type){
+            post.classList.remove('invisible');
+        }else{
+            post.classList.add('invisible');
+        }       
+})})

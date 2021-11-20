@@ -262,6 +262,11 @@ p {
   color: white;
 }
 
+.category__btn.active {
+  background-color: var(--color-dark-background);
+  color: white;
+}
+
 .adventure__posts {
   display: flex;
   flex-wrap: wrap;
@@ -270,6 +275,9 @@ p {
 .adventure__post {
   margin: 5px 10px;
   cursor: pointer;
+}
+.adventure__post.invisible {
+  display: none;
 }
 .adventure__post img {
   width: 230px;
@@ -411,6 +419,7 @@ p {
   .adventure__posts {
     margin-top: 20px;
   }
+
   .adventure__post img {
     width: 400px;
     height: 380px;
