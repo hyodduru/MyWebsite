@@ -19,11 +19,14 @@ navbarMenu.addEventListener('click',(event)=>{
     if(id==null){
         return;
     }
+    
     scrollIntoView(`#${id}`)
 });
 
 homeBtn.addEventListener('click', ()=>{
     scrollIntoView('#contact');})
+
+
 
 
 //transparent home : Make home slowly fade to transparent as the window scrolls down
@@ -63,8 +66,6 @@ const categoryBtns= document.querySelector('.adventure__category');
 const adventurePosts = document.querySelectorAll('.adventure__post');
 const postContainer = document.querySelector('.adventure__posts');
 
-
-
 categoryBtns.addEventListener('click',(event)=>{
     const button = event.target;
     const filterName = button.dataset.filter;
@@ -86,3 +87,4 @@ categoryBtns.addEventListener('click',(event)=>{
        ,300
     )      
 })
+

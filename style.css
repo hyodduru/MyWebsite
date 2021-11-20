@@ -129,7 +129,8 @@ p {
   cursor: pointer;
 }
 
-.navbar__menu__item:hover {
+.navbar__menu__item:hover,
+.navbar__menu__item.active {
   border: 1px var(--color-white) solid;
   border-radius: var(--border-radius);
   background-color: var(--color-dark-background);
@@ -262,7 +263,8 @@ p {
   color: white;
 }
 
-.category__btn.active {
+.category__btn:focus,
+.category__btn:hover {
   background-color: var(--color-dark-background);
   color: white;
 }
