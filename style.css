@@ -271,6 +271,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all var(--animation-duration) ease-in;
+}
+.adventure__posts.anim-out {
+  opacity: 0.3;
+  transform: scale(0.98) translateY(40px);
 }
 .adventure__post {
   margin: 5px 10px;

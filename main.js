@@ -58,9 +58,10 @@ function scrollIntoView(selector){
     scrollTo.scrollIntoView({behavior: 'smooth'});
 }
 
-//adventure filtering 
+//adventure post filtering and animation
 const categoryBtns= document.querySelector('.adventure__category');
 const adventurePosts = document.querySelectorAll('.adventure__post');
+const postContainer = document.querySelector('.adventure__posts');
 
 
 
@@ -70,11 +71,18 @@ categoryBtns.addEventListener('click',(event)=>{
     if(filterName===undefined){
         return;
     }
-    adventurePosts.forEach(post =>  
-      { 
-        if(filterName === '*' || filterName === post.dataset.type){
-            post.classList.remove('invisible');
-        }else{
-            post.classList.add('invisible');
-        }       
-})})
+    postContainer.classList.add('anim-out');
+    
+    setTimeout(()=>{
+        adventurePosts.forEach(post =>  
+            { 
+              if(filterName === '*' || filterName === post.dataset.type){
+                  post.classList.remove('invisible');
+              }else{
+                  post.classList.add('invisible');
+              }       
+      })
+        postContainer.classList.remove('anim-out') }
+       ,300
+    )      
+})
