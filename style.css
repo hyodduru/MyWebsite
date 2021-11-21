@@ -156,15 +156,13 @@ p {
   height: 250px;
 }
 .home h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Amatic SC", cursive;
 }
 
 .home__sticker {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
+  transform: translateY(14px);
 }
 
 .home h1,
@@ -286,6 +284,7 @@ p {
   transform: scale(0.98) translateY(40px);
 }
 .adventure__post {
+  position: relative;
   margin: 5px 10px;
   cursor: pointer;
 }
@@ -303,15 +302,24 @@ p {
   opacity: 0.3;
 }
 .post__description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  top: 0;
   opacity: 0;
   font-weight: var(--weight-bold);
   transition: all var(--animation-duration) ease-in;
+  transform: translateY(100px);
 }
 
 .adventure__post:hover .post__description {
-  transform: translateY(-130px);
+  align-items: center;
   color: var(--color-black);
   opacity: 1;
+  transform: translateY(100px);
 }
 
 /* vision */
@@ -410,6 +418,10 @@ p {
     display: block;
   }
 
+  .home__sticker {
+    width: 50px;
+    height: 50px;
+  }
   .section {
     padding: 16px;
     padding-top: 40px;
@@ -435,11 +447,14 @@ p {
     width: 400px;
     height: 370px;
   }
+
   .adventure__post:hover .post__description {
-    transform: translateY(-210px);
+    transform: translateY(165px);
   }
+
   .post__description {
     font-size: 25px;
+    transform: translateY(165px);
   }
 
   .arrow-up {
