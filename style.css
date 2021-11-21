@@ -419,7 +419,8 @@ p {
   }
 
   #home {
-    padding: 16px;
+    padding: 20px;
+    padding-top: 60px;
   }
   .home__sticker {
     width: 50px;
@@ -462,6 +463,9 @@ p {
   .post__description {
     font-size: 22px;
     transform: translateY(145px);
+  }
+  #vision {
+    padding: 16px 8px;
   }
 
   .arrow-up {
