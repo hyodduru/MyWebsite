@@ -136,6 +136,12 @@ p {
   background-color: var(--color-dark-background);
 }
 
+.navbar__toggle-btn {
+  color: var(--color-white);
+  position: fixed;
+  display: none;
+}
+
 /* home */
 #home {
   width: 100%;
@@ -382,13 +388,12 @@ p {
     --font-small: 14px;
     --font-micro: 12px;
   }
-
-  /* .navbar__toggle-btn {
+  .navbar__toggle-btn {
     display: block;
-    top: 14px;
-    right: 16px;
+    top: 19px;
+    right: 17px;
     font-size: var(--font-medium);
-  } */
+  }
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -411,8 +416,7 @@ p {
   }
   .about__details {
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 0;
+    margin: 0px;
   }
 
   .adventure__btn {
@@ -421,7 +425,7 @@ p {
 
   .category__btn {
     margin: 4px 0;
-    width: 100%;
+    width: 80%;
   }
   .adventure__posts {
     margin-top: 20px;
@@ -429,7 +433,7 @@ p {
 
   .adventure__post img {
     width: 400px;
-    height: 380px;
+    height: 370px;
   }
   .adventure__post:hover .post__description {
     transform: translateY(-210px);
