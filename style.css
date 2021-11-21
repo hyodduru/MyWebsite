@@ -418,10 +418,14 @@ p {
     display: block;
   }
 
+  #home {
+    padding: 16px;
+  }
   .home__sticker {
     width: 50px;
     height: 50px;
   }
+
   .section {
     padding: 16px;
     padding-top: 40px;
@@ -431,6 +435,9 @@ p {
     margin: 0px;
   }
 
+  #value {
+    padding: 16px 8px;
+  }
   .adventure__btn {
     padding: 8px;
   }
@@ -444,17 +451,17 @@ p {
   }
 
   .adventure__post img {
-    width: 400px;
-    height: 370px;
+    width: 350px;
+    height: 320px;
   }
 
   .adventure__post:hover .post__description {
-    transform: translateY(165px);
+    transform: translateY(145px);
   }
 
   .post__description {
-    font-size: 25px;
-    transform: translateY(165px);
+    font-size: 22px;
+    transform: translateY(145px);
   }
 
   .arrow-up {
